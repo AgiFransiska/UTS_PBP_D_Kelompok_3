@@ -21,7 +21,8 @@ public class TampilTracking extends AppCompatActivity {
         btnlogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(TampilTracking.this, TrackingActivity.class));
+                startActivity(new Intent(TampilTracking.this, MainActivity.class));
+                finish();
             }
         });
 

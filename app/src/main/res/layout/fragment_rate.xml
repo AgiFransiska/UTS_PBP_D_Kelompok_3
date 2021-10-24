@@ -51,10 +51,5 @@
             android:text="Tarif/Kg"
             android:textSize="20dp"
             android:textAlignment="center"/>
-        <Button
-            android:id="@+id/sendNotif"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Send Via Notification" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

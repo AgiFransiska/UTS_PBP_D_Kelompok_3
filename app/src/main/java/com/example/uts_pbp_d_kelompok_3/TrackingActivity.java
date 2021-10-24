@@ -51,6 +51,7 @@ public class TrackingActivity extends AppCompatActivity {
     private void checkTracking(){
         if (trackingPreferences.checkTracking()){
             startActivity(new Intent(TrackingActivity.this, TampilTracking.class));
+            finish();
         }
     }
 }

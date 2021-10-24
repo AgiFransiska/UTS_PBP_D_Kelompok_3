@@ -39,7 +39,6 @@ public class RateFragment extends Fragment{
         String[] tujuan = {"Yogyakarta","Bali","Jakarta","Bandung"};
 
         Button buttonCek = view.findViewById(R.id.cekTarif);
-        Button buttonSend = view.findViewById(R.id.sendNotif);
         TextView textViewTarif = view.findViewById(R.id.hasilTarif);
         AutoCompleteTextView autoCompleteTextView, autoCompleteTextView1;
 
@@ -56,13 +55,6 @@ public class RateFragment extends Fragment{
             public void onClick(View view) {
                 String ongkos = "Rp. 10.000";
                 textViewTarif.setText(ongkos);
-            }
-        });
-
-        buttonSend.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
             }
         });
         // Inflate the layout for this fragment

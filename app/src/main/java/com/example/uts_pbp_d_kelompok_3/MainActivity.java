@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
                     .setPositiveButton("YES", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
-
+                            startActivity(new Intent(MainActivity.this, LoginActivity.class));
                             finishAndRemoveTask();
                         }
                     })

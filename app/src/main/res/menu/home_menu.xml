@@ -22,5 +22,5 @@
         android:id="@+id/menu_logout"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_logout_24"
-        android:title="@string/logout"/>
+        android:title="@string/exit"/>
 </menu>
