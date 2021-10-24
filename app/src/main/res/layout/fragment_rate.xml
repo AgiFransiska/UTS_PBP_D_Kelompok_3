@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".RateFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="280dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".MainActivity">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <AutoCompleteTextView
+                android:id="@+id/asal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:hint="Asal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <AutoCompleteTextView
+                android:id="@+id/tujuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:hint="Tujuan"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/cekTarif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cek" />
+        <TextView
+            android:id="@+id/hasilTarif"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Tarif/Kg"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+        <Button
+            android:id="@+id/sendNotif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Via Notification" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
